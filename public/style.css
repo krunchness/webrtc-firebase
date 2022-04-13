@@ -1,0 +1,14 @@
+video {
+  max-width: 100%;
+  width: 320px;
+  background: black;
+  display: block;
+  margin: 1em;
+
+}
+
+div#videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

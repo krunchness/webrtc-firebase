@@ -1,9 +1,14 @@
 body {
-    background: #ECEFF1;
+    background: #D3D3D3;
     color: rgba(0, 0, 0, 0.87);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url(screen_1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #message {
@@ -75,16 +80,71 @@ button {
     margin: 0.2em 0.1em;
 }
 
+#icon{
+    position: fixed;
+    width:25vw;
+    height:60vh;
+    margin-top: 50px;
+}
+
+#icon1{
+    position: fixed;
+    width:10vw;
+    height:20vh;
+    margin-top: 50px;
+    margin-left: 85vw;
+    float: right;
+}
+
 div#videos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
-div#videos > video {
+div#videos > #localVideo {
+    text-align: center;
     background: black;
-    width: 640px;
-    height: 100%;
+    width:  50%;
+    height: auto;
+    max-height: 480px;
     display: block;
-    margin: 1em;
+    margin-top: -10%;
+    position: relative;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+div#videos > #remoteVideo {
+    background: black;
+    width: 25%    !important;
+    height: auto   !important;
+    max-height: 200px;
+    display: block;
+    position: relative;
+    margin-left: 15%;
+    transform: translateX(-50%);
+}
+
+#buttons {
+    text-align: center;
+}
+#buttons>button {
+    left: 12%;
+    margin-top: -25%;
+    position: relative;
+}
+
+#buttons .mdc-button.mdc-button--raised{
+    background-color: #BFD6EF;
+    color: #000000;
+}
+
+
+#banner{
+    display: flex; 
+    flex-wrap: wrap;
+    height: 8%;
+    width: 8%;
 }

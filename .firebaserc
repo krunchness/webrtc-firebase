@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "fir-rtc-89b99"
-  }
+    "default": "rtc-web-app",
+    "db": "ycse-vc",
+    "default\\": "ycse-vc",
+    "staging": "rtc-web-app"
+  },
+  "targets": {}
 }
