@@ -155,7 +155,7 @@ async function createRoom() {
 
   await roomRef.set(roomWithOffer);
   roomId = roomRef.id;
-  roomtimeout(roomId);
+  // roomtimeout(roomId);
 
   peerConnection.addEventListener('track', event => {
     console.log('Got remote track:', event.streams[0]);
